@@ -8,7 +8,8 @@ Create virtual env, install requirements and start the game:
 
 ```
 python3 -m venv .venv
-source venv/bin/activate
+source .venv/bin/activate
+pip install -r requirements.txt 
 python3 main.py
 deactivate
 ```
