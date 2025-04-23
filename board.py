@@ -60,7 +60,7 @@ class Board:
                 self.current_position_x = self.start_position_x
                 self.current_position_y = self.start_position_y
                 
-                self.active_shape = self.pieces_factory.create_piece(self.current_position_x, self.current_position_y, (60, 125, 210))
+                self.active_shape = self.pieces_factory.create_piece(self.current_position_x, self.current_position_y)
                 
                 # TODO: End of the game
                 if self.is_collided(self.active_shape):
