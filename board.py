@@ -65,6 +65,7 @@ class Board:
                 # TODO: End of the game
                 if self.is_collided(self.active_shape):
                     print('END OF THE GAME')
+                    pygame.mixer.music.stop()
                     self.end_game = True
             
             self.draw_piece(canvas=canvas, piece=self.active_shape)

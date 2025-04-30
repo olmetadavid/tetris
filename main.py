@@ -50,6 +50,9 @@ def keydown(event):
     elif event.key == K_UP:
         board.rotate()
 
+pygame.mixer.music.load('./doc/audiofiles/davtris.mp3')
+pygame.mixer.music.play(-1)
+
 init()
 while True:
     
